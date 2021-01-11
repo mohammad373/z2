@@ -36,7 +36,7 @@ def __target__():
     # print(Fore.BLUE + "     [6] ~ " + Fore.GREEN + "All")
 
 
-    number = input(Fore.BLUE + "\n\n[!] ~ " + Fore.GREEN + "Pleass Enter Your Number" + Fore.BLUE + " ==>  " +Forre.RED + "")
+    number = input(Fore.BLUE + "\n\n[!] ~ " + Fore.GREEN + "Pleass Enter Your Number" + Fore.BLUE + " ==>  " +Fore.RED + "")
     if number == "" or None:
         try:
             time.sleep(1)
