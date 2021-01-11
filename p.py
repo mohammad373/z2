@@ -28,12 +28,12 @@ def __target__():
     print("")
     print("")
 
-    print(Fore.BLUE + "     [1] ~ " + Forer.GREEN + "Whois Lookup")
-    print(Fore.BLUE + "     [2] ~ " + Forer.GREEN + "nmap Domain")
-    print(Fore.BLUE + "     [3] ~ " + Forer.GREEN + "Whatweb Domain")
-    print(Fore.BLUE + "     [4] ~ " + Forer.GREEN + "Dirb Domin")
-    print(Fore.BLUE + "     [5] ~ " + Forer.GREEN + "Admin-Panel Domin")
-    # print(Fore.BLUE + "     [6] ~ " + Forer.GREEN + "All")
+    print(Fore.BLUE + "     [1] ~ " + Fore.GREEN + "Whois Lookup")
+    print(Fore.BLUE + "     [2] ~ " + Fore.GREEN + "nmap Domain")
+    print(Fore.BLUE + "     [3] ~ " + Fore.GREEN + "Whatweb Domain")
+    print(Fore.BLUE + "     [4] ~ " + Fore.GREEN + "Dirb Domin")
+    print(Fore.BLUE + "     [5] ~ " + Fore.GREEN + "Admin-Panel Domin")
+    # print(Fore.BLUE + "     [6] ~ " + Fore.GREEN + "All")
 
 
     number = input(Fore.BLUE + "\n\n[!] ~ " + Fore.GREEN + "Pleass Enter Your Number" + Fore.BLUE + " ==>  " +Forre.RED + "")
