@@ -27,12 +27,17 @@ def __target__():
     print("")
     print("")
     print("")
-
+    time.sleep(1)
     print(Fore.BLUE + "     [1] ~ " + Fore.GREEN + "Whois Lookup")
+    time.sleep(1)
     print(Fore.BLUE + "     [2] ~ " + Fore.GREEN + "nmap Domain")
+    time.sleep(1)
     print(Fore.BLUE + "     [3] ~ " + Fore.GREEN + "Whatweb Domain")
+    time.sleep(1)
     print(Fore.BLUE + "     [4] ~ " + Fore.GREEN + "Dirb Domin")
+    time.sleep(1)
     print(Fore.BLUE + "     [5] ~ " + Fore.GREEN + "Admin-Panel Domin")
+    time.sleep(1)
     # print(Fore.BLUE + "     [6] ~ " + Fore.GREEN + "All")
 
 
@@ -48,7 +53,7 @@ def __target__():
         os.system("clear")
     if "ls" in number:
         os.system("ls")
-    target = input(Fore.BLUE + "[!] ~ " + Fore.GREEN + "Pleass Enter Your Domain" + Fore.BLUE + " ==>  " + fore.RED + "")
+    target = input(Fore.BLUE + "[!] ~ " + Fore.GREEN + "Pleass Enter Your Domain" + Fore.BLUE + " ==>  " + Fore.RED + "")
     if target == "" or None:
         try:
             print(Fore.RED + "[-] ~ Error : Your Domain Is None ;(")
