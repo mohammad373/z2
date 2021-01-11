@@ -234,3 +234,4 @@ def __target__():
             sys.exit()
         except:
             sys.exit()
+__target__()
