@@ -27,17 +27,17 @@ def __target__():
     print("")
     print("")
     print("")
-    time.sleep(1)
+    time.sleep(0.1)
     print(Fore.BLUE + "     [1] ~ " + Fore.GREEN + "Whois Lookup")
-    time.sleep(1)
+    time.sleep(0.1)
     print(Fore.BLUE + "     [2] ~ " + Fore.GREEN + "nmap Domain")
-    time.sleep(1)
+    time.sleep(0.1)
     print(Fore.BLUE + "     [3] ~ " + Fore.GREEN + "Whatweb Domain")
-    time.sleep(1)
+    time.sleep(0.1)
     print(Fore.BLUE + "     [4] ~ " + Fore.GREEN + "Dirb Domin")
-    time.sleep(1)
+    time.sleep(0.1)
     print(Fore.BLUE + "     [5] ~ " + Fore.GREEN + "Admin-Panel Domin")
-    time.sleep(1)
+    time.sleep(0.1)
     # print(Fore.BLUE + "     [6] ~ " + Fore.GREEN + "All")
 
 
@@ -53,7 +53,8 @@ def __target__():
         os.system("clear")
     if "ls" in number:
         os.system("ls")
-    target = input(Fore.BLUE + "[!] ~ " + Fore.GREEN + "Pleass Enter Your Domain" + Fore.BLUE + " ==>  " + Fore.RED + "")
+    time.sleep(1)
+    target = input(Fore.BLUE + "\n[!] ~ " + Fore.GREEN + "Pleass Enter Your Domain" + Fore.BLUE + " ==>  " + Fore.RED + "")
     if target == "" or None:
         try:
             print(Fore.RED + "[-] ~ Error : Your Domain Is None ;(")
@@ -73,7 +74,7 @@ def __target__():
             sys.exit()
     # ________________________________________________________________________________________________
     if "1" in number:
-        r2 = requests.get("https://http://api.hackertarget.com/whois/?q=" + target).text
+        r2 = requests.get("https://api.hackertarget.com/whois/?q=" + target).text
         print(Fore.RED + "-------------------  whois  -------------------")
         print("")
         print(Fore.GREEN + r2)
