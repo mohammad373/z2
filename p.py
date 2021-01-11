@@ -61,8 +61,8 @@ def __target__():
             sys.exit()
         except:
             sys.exit()
-    if not "https://" in target  or not "http://" in target:
-        target = "http://" + target
+    #if not "https://" in target  or not "http://" in target:
+     #   target = "http://" + target
     r1 = requests.get(target)
     if r1.status_code == 200:
         print(Fore.GREEN + "\n[+] ~ Your domain Is Found ;)\n")
