@@ -232,12 +232,12 @@ def __target__():
                 print(Fore.GREEN + "[+] ~ " + Fore.GREEN + r7)
             if r8.status_code != 200:
                 print(Fore.RED + "[-] ~ " + Fore.RED + "[-] ~ " + Fore.RED + r7)
-    else:
-        try:
-            time.sleep(1)
-            print(Fore.RED + "\n[-] ~ Error : Your Number Is Not Found ;(")
-            time.sleep(1)
-            sys.exit()
-        except:
-            sys.exit()
+    #else:
+     #   try:
+      #      time.sleep(1)
+       #     print(Fore.RED + "\n[-] ~ Error : Your Number Is Not Found ;(")
+        #    time.sleep(1)
+         #   sys.exit()
+        #except:
+         #   sys.exit()
 __target__()
