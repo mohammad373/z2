@@ -61,9 +61,9 @@ def __target__():
             sys.exit()
         except:
             sys.exit()
-    #if not "https://" in target  or not "http://" in target:
-     #   target = "http://" + target
-    r1 = requests.get(target)
+    if not "https://" in target  or not "http://" in target:
+        target2 = "http://" + target
+    r1 = requests.get(target2)
     if r1.status_code == 200:
         print(Fore.GREEN + "\n[+] ~ Your domain Is Found ;)\n")
     if r1.status_code != 200:
@@ -226,7 +226,7 @@ def __target__():
 'modelsearch/admin.brf','admincontrol/login.brf','adm/admloginuser.brf','admloginuser.brf','admin2.brf','admin2/login.brf','admin2/index.brf','usuarios/login.brf',
 'adm/index.brf','adm.brf','affiliate.brf','adm_auth.brf','memberadmin.brf','administratorlogin.brf','cpanel','cpanel.php','cpanel.html']
         for i2 in my_list2:
-            r7 = str(target) + "/" + str(i2)
+            r7 = str(target2) + "/" + str(i2)
             r8 = requests.get(r7)
             if r8.status_code == 200:
                 print(Fore.GREEN + "[+] ~ " + Fore.GREEN + r7)
